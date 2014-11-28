@@ -115,8 +115,10 @@ private static boolean isDelimit (char C)
 {
 	   boolean delimit;
 	   for (int i = 0; i<  delimits.length; i++)
-	   if (C == delimits [i])
-	      delimit = true;
+	   if (C == delimits [i]){
+		   delimit = true;
+		   return delimit;
+	   }
 	   delimit = false;
 	   return delimit;
 }
